@@ -7,7 +7,20 @@ db = SQLAlchemy(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('test.html')
+
+@app.route('/test')
+def test():
+    return render_template('test.html')
+"""
+each individual user can keep his own:
+- to read lists
+- already read lists
+- in progress lists
+- liked 
+
+"""
+
 
 # class Book(db.Model):
 #     # be able to be sorted by author & genre 
